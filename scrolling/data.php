@@ -1,9 +1,9 @@
 <?php
 
 // Test ajax 
-// if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
-//     sleep(4);
-// }
+if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
+    sleep(1);
+}
 
 // Thiết lập kết quả trả về là html và charset là utf8 để khỏi lỗi font
 header('Content-Type: text/html; charset=utf-8');
@@ -21,7 +21,7 @@ if ($page < 1) {
 }
 
 // Số record trên một trang
-$limit = 40;
+$limit = 3;
 
 // Tìm start
 $start = ($limit * $page) - $limit;

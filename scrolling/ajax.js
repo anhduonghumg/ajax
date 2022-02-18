@@ -43,7 +43,7 @@ $(document).ready(function () {
         url: "data.php",
         data: { page: page },
         success: function (result) {
-          $element.append(result);
+          $e.append(result);
         },
       }).always(function () {
         // Sau khi thực hiện xong ajax thì ẩn hidden và cho trạng thái gửi ajax = false
